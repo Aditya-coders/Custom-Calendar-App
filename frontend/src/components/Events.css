@@ -1,0 +1,129 @@
+.events-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.events-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.participation-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.response-message {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #28a745;
+}
+
+.form-group-name input.input-name {
+  border-color: #007bff;
+}
+
+.form-group-email input.input-email {
+  border-color: #17a2b8;
+}
+
+.form-group-phone input.input-phone {
+  border-color: #ffc107;
+}
+
+.form-group-event select.select-event {
+  border-color: #6c757d;
+}
+
+.form-group-course select.select-course {
+  border-color: #28a745;
+}
+
+.form-group-branch select.select-branch {
+  border-color: #dc3545;
+}
+
+.form-group-activity select.select-activity {
+  border-color: #343a40;
+}
+
+
+
+
+/* ///////// ticket    /////////////////// */
+
+
+.ticket-preview-container {
+  padding: 30px;
+  background-color: #f0f4ff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.ticket-preview-container h2 {
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.ticket-preview-container .ticket {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-preview-container button {
+  display: block;
+  margin: 20px auto;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ticket-preview-container button:hover {
+  background-color: #218838;
+}

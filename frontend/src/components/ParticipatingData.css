@@ -1,0 +1,141 @@
+/* General styles */
+.participating-data-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #16a085, #2c3e50);
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.participating-data-container:hover {
+  transform: scale(1.05); /* Slightly zoom when hovering */
+}
+
+h1 {
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.download-options {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.download-options label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ecf0f1;
+}
+
+.download-options input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.download-options input:focus {
+  outline: none;
+  border-color: #16a085;
+  box-shadow: 0 0 10px rgba(22, 160, 133, 0.5);
+}
+
+.participations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #34495e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.participations-table th,
+.participations-table td {
+  padding: 12px 18px;
+  text-align: left;
+  color: #ecf0f1;
+}
+
+.participations-table th {
+  background: linear-gradient(135deg, #16a085, #1abc9c);
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.participations-table td {
+  background-color: #2c3e50;
+  border-bottom: 1px solid #7f8c8d;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.participations-table tr:hover td {
+  background-color: #1abc9c; /* Hover effect on table rows */
+}
+
+.participations-table tr:nth-child(even) td {
+  background-color: #34495e;
+}
+
+.export-button {
+  background-color: #16a085;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.export-button:hover {
+  background-color: #1abc9c;
+  box-shadow: 0 4px 15px rgba(22, 160, 133, 0.4);
+}
+
+.export-button:focus {
+  outline: none;
+  box-shadow: 0 0 12px rgba(22, 160, 133, 0.7);
+}
+
+@media (max-width: 768px) {
+  .participating-data-container {
+    width: 90%;
+  }
+
+  .download-options input {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .participations-table th, .participations-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .export-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

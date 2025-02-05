@@ -1,0 +1,167 @@
+/* Homepage.css */
+
+/* General styling for the homepage container */
+.homepage-container {
+  background: radial-gradient(circle, #1e3c72, #2a5298, #162447);
+  min-height: 100vh;
+  padding-bottom: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.homepage-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  animation: fadeInDown 1s ease;
+}
+
+/* Search bar styling */
+.search-bar {
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+/* Event cards styling */
+.event-card {
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border: none;
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+.event-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.event-card-img {
+  height: 220px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease-in-out;
+}
+
+.event-card-img:hover {
+  filter: brightness(1);
+}
+
+.event-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+}
+
+.view-more-btn {
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.5);
+}
+
+.view-more-btn:hover {
+  background: linear-gradient(145deg, #0056b3, #003d7a);
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Modal styling */
+.modal-header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  border-bottom: none;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.modal-body {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-footer {
+  background: #f7f7f7;
+  border-top: none;
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.homepage-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.event-card {
+  animation: slideIn 0.8s ease-in-out;
+}

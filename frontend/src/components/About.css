@@ -1,0 +1,94 @@
+/* About.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-custom {
+    background-color: #343a40;
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: #ffffff;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #ffd700;
+  }
+  
+  /* Main Content */
+  .container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  h1.display-4 {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  h2.text-primary {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* About Section */
+  .img-fluid.rounded {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .img-fluid.rounded:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Key Events Section */
+  h4 {
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Impact Section */
+  .img-impact {
+    border-radius: 15px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .img-impact:hover {
+    opacity: 0.8;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
+  
